@@ -1,0 +1,267 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+XComboGrid
+</name>
+</assembly>
+<members>
+<member name="T:XComboGrid.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:XComboGrid.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:XComboGrid.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:XComboGrid.My.Resources.Resources.CBGridDown">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:XComboGrid.GridDB.getDataRowFilter(System.String,System.Data.DataColumn[],System.Object)">
+ <summary>
+ Untuk melakukan pencarian Data. Sbg. Contoh : DataTable.DefaultView.RowFilter = "Nama_Colom1 Like '% value %' Or Nama_Colom2 LIKE '% value %'",
+ dan jika Kolom terdapat SPASI lakukan kode sperti ini [Nama Colom1].
+ CREATED BY : [aN] - 2015 - ccomputing.web.id
+ </summary>
+ <param name="addQry">Masukkan query yang akan di Eksekusi.</param>
+ <param name="Header_Text">Lakukan penyesuaian dengan jumlah Field yang akan di munculkan (Max. 20 Field). Sebagai Contoh : "{New DataColumn("Kode"), New DataColumn("User Name")}"</param>
+ <remarks></remarks>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs">
+ <summary>
+ Contains event information for a <see cref="!:PopupClosed"/> event.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs.m_popup">
+ <summary>
+ The popup form.
+ </summary>
+</member>
+<member name="P:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs.Popup">
+ <summary>
+ Gets the popup form which is being closed.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs.#ctor(System.Windows.Forms.Form)">
+ <summary>
+ Constructs a new instance of this class for the specified
+ popup form.
+ </summary>
+ <param name="popup">Popup Form which is being closed.</param>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs">
+ <summary>
+ Arguments to a <see cref="!:PopupCancelEvent"/>.  Provides a
+ reference to the popup form that is to be closed and 
+ allows the operation to be cancelled.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.m_cancel">
+ <summary>
+ Whether to cancel the operation
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.location">
+ <summary>
+ Mouse down location
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.m_popup">
+ <summary>
+ Popup form.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.#ctor(System.Windows.Forms.Form,System.Drawing.Point)">
+ <summary>
+ Constructs a new instance of this class.
+ </summary>
+ <param name="popup">The popup form</param>
+ <param name="location">The mouse location, if any, where the
+ mouse event that would cancel the popup occured.</param>
+</member>
+<member name="P:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.Popup">
+ <summary>
+ Gets the popup form
+ </summary>
+</member>
+<member name="P:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.CursorLocation">
+ <summary>
+ Gets the location that the mouse down which would cancel this 
+ popup occurred
+ </summary>
+</member>
+<member name="P:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.Cancel">
+ <summary>
+ Gets/sets whether to cancel closing the form. Set to
+ <c>true</c> to prevent the popup from being closed.
+ </summary>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventHandler">
+ <summary>
+ Represents the method which responds to a <see cref="!:PopupClosed"/> event.
+ </summary>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventHandler">
+ <summary>
+ Represents the method which responds to a <see cref="!:PopupCancel"/> event.
+ </summary>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper">
+ <summary>
+ CREATED BY [aN] - 2015
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper._filter">
+ <summary>
+ Message filter to detect mouse clicks anywhere in the application
+ whilst the popup window is being displayed.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper._m_popup">
+ <summary>
+ The popup form that is being shown.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.m_owner">
+ <summary>
+ The owner of the popup form that is being shown:
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.popupShowing">
+ <summary>
+ Whether the popup is showing or not.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.skipClose">
+ <summary>
+ Whether the popup has been cancelled, notified by PopupCancel,
+ rather than closed.
+ </summary>
+</member>
+<member name="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.PopupClosed">
+ <summary>
+ Raised when the popup form is closed.
+ </summary>
+</member>
+<member name="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.PopupCancel">
+ <summary>
+ Raised when the Popup Window is about to be cancelled.  The
+ <see cref="P:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.Cancel"/> property can be
+ set to <c>true</c> to prevent the form from being cancelled.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.ShowPopup(System.Windows.Forms.Form,System.Windows.Forms.Form,System.Drawing.Point)">
+ <summary>
+ </summary>
+ <param name="owner">Main form which owns the popup</param>
+ <param name="popup">Window to show as a popup</param>
+ <param name="location">Location relative to the screen to show the popup at.</param>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.WndProc(System.Windows.Forms.Message@)">
+ <summary>
+ Subclasses the owning form's existing Window Procedure to enables the 
+ title bar to remain active when a popup is show, and to detect if
+ the user clicks onto another application whilst the popup is visible.
+ </summary>
+ <param name="m">Window Procedure Message</param>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.ClosePopup">
+ <summary>
+ Called when the popup is being hidden.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.OnPopupClosed(XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs)">
+ <summary>
+ Raises the <see cref="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.PopupClosed"/> event.
+ </summary>
+ <param name="e"><see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupClosedEventArgs"/> describing the
+ popup form that is being closed.</param>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.OnPopupCancel(XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs)">
+ <summary>
+ Raises the <see cref="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.PopupCancel"/> event.
+ </summary>
+ <param name="e"><see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs"/> describing the
+ popup form that about to be cancelled.</param>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper.#ctor">
+ <summary>
+ Default constructor.
+ </summary>
+ <remarks>Use the <see cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)"/>
+ method to attach this class to the form you want to show popups from.</remarks>
+</member>
+<member name="T:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter">
+ <summary>
+ A Message Loop filter which detect mouse events whilst the popup form is shown
+ and notifies the owning <see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper"/> class when a mouse
+ click outside the popup occurs.
+ </summary>
+</member>
+<member name="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.PopupCancel">
+ <summary>
+ Raised when the Popup Window is about to be cancelled.  The
+ <see cref="P:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs.Cancel"/> property can be
+ set to <c>true</c> to prevent the form from being cancelled.
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.m_popup">
+ <summary>
+ The popup form
+ </summary>
+</member>
+<member name="F:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.owner">
+ <summary>
+ The owning <see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper"/> object.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.#ctor(XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper)">
+ <summary>
+ Constructs a new instance of this class and sets the owning
+ object.
+ </summary>
+ <param name="owner">The <see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelper"/> object
+ which owns this class.</param>
+</member>
+<member name="P:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.Popup">
+ <summary>
+ Gets/sets the popup form which is being displayed.
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)">
+ <summary>
+ Checks the message loop for mouse messages whilst the popup
+ window is displayed.  If one is detected the position is
+ checked to see if it is outside the form, and the owner
+ is notified if so.
+ </summary>
+ <param name="m">Windows Message about to be processed by the
+ message loop</param>
+ <returns><c>true</c> to filter the message, <c>false</c> otherwise.
+ This implementation always returns <c>false</c>.</returns>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.OnMouseDown">
+ <summary>
+ Checks the mouse location and calls the OnCancelPopup method
+ if the mouse is outside the popup form.		
+ </summary>
+</member>
+<member name="M:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.OnCancelPopup(XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs)">
+ <summary>
+ Raises the <see cref="E:XComboGrid.vbAccelerator.Components.Controls.PopupWindowHelperMessageFilter.PopupCancel"/> event.
+ </summary>
+ <param name="e">The <see cref="T:XComboGrid.vbAccelerator.Components.Controls.PopupCancelEventArgs"/> associated 
+ with the cancel event.</param>
+</member>
+</members>
+</doc>
